@@ -205,6 +205,7 @@ function MyClientModule() {
                   </div>`;
     });
   }
+  // indentation consistency would be helpful when other developers expand more functionalies based on your code
 
   async function fetchTitles() {
     const res = await fetch("/media/titles");
