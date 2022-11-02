@@ -19,6 +19,7 @@ function myMongoDB() {
 
   myDB.authenticate = async (user) => {
     let client, col;
+    // meaningful variable naming help other developers understand the contexts well
     try {
       [client, col] = await getCollection(COllCECTION_NAME_USER);
       console.log("seraching for", user);
